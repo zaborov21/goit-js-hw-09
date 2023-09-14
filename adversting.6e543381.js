@@ -1,0 +1,2 @@
+const e=document.querySelector(".js-container"),t=document.querySelector(".js-timer"),n=document.querySelector(".js-btn"),l=document.querySelector(".js-descr");let c=10;setTimeout((()=>{e.style.display="block";const o=setInterval((()=>{c-=1,t.textContent=c,c||(clearInterval(o),l.style.display="none",n.style.display="block")}),1e3)}),5e3),n.addEventListener("click",(function(){e.style.display="none"}));
+//# sourceMappingURL=adversting.6e543381.js.map

@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".js-container"),t=document.querySelector(".js-timer"),n=document.querySelector(".js-btn"),c=document.querySelector(".js-descr"),o=10;setTimeout((function(){e.style.display="block";var l=setInterval((function(){o-=1,t.textContent=o,o||(clearInterval(l),c.style.display="none",n.style.display="block")}),1e3)}),5e3),n.addEventListener("click",(function(){e.style.display="none"}))}();
+//# sourceMappingURL=adversting.7976fcda.js.map
