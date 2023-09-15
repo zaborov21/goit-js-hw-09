@@ -1,2 +1,0 @@
-.container-switcher{height:100vh;justify-content:center;align-items:center;display:flex}button{width:200px;height:50px;cursor:pointer;border:1px solid rgba(0,0,0,0);border-radius:10px;margin-top:10px;scale:1}button:not(:first-child){margin-left:10px}button:active{scale:.97}
-/*# sourceMappingURL=01-color-switcher.d4e51d1b.css.map */
