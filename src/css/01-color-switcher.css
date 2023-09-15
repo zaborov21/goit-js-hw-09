@@ -1,8 +1,7 @@
 .container-switcher {
-  height: 100vh;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 button {
@@ -17,6 +16,6 @@ button {
 button:not(:first-child) {
  margin-left: 10px;
 }
-button:active {
+/* button:active {
   scale: 0.97;
-}
+} */

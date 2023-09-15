@@ -14,7 +14,9 @@ stopBtnRef.addEventListener("click", handlerStoptBtnClick);
 function handlerStartBtnClick() {
 
     startBtnRef.disabled = true;
+    startBtnRef.style.cursor = "not-allowed";
     stopBtnRef.disabled = false;
+    stopBtnRef.style.cursor = "pointer";
 
     intervalId = setInterval(() => {
         bodyRef.style.backgroundColor = getRandomHexColor();
@@ -22,7 +24,11 @@ function handlerStartBtnClick() {
 }
 function handlerStoptBtnClick() {
     clearInterval(intervalId);
+    stopBtnRef.disabled = true
+    stopBtnRef.style.cursor = "not-allowed";
+    stopBtnRef.style.active = "none";
     startBtnRef.disabled = false;
-    stopBtnRef.disabled = true;
+    startBtnRef.style.cursor = "pointer";
+
 }
 

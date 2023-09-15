@@ -4,9 +4,10 @@
 }
 .datetime{
   width: 200px;
+  height: 30px;
 }
 .btn{
-  margin-left: 10px;
+  margin-left: 5px;
   width: 50px;
   cursor: pointer;
 }
