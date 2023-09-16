@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.form{
+  margin-top: 150px;
+  display: flex;
+}
+label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
