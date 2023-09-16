@@ -21,6 +21,7 @@ let intervalId;
 const options = {
     enableTime: true,
     time_24hr: true,
+    defaultDate: new Date(),
     minuteIncrement: 1,
     onClose(selectedDates) {
 
@@ -33,7 +34,7 @@ const options = {
         }
     },
 };
-console.log(localStorage.getItem("savedSelectedDates"));
+
 const fp = flatpickr(datetimePickerRef, options);
 
 
@@ -50,6 +51,7 @@ function handlerClickStart() {
     } else {
         Notiflix.Notify.success("Countdown is runing");
         clearBtnRef.disabled = false;
+        startBtnRef.disabled = true;
         intervalId = setInterval(() => {
 
             const currentTime = new Date();
@@ -76,13 +78,13 @@ function handlerClickClear() {
     localStorage.removeItem("savedSelectedDates");
     clearInterval(intervalId);
     clearBtnRef.disabled = true;
+    startBtnRef.disabled = true;
     Notiflix.Notify.warning("The countdown has been cleared. Please choose a new date for the countdown!");
     day.textContent = "00";
     hours.textContent = "00";
     minutes.textContent = "00"
     seconds.textContent = "00";
 }
-
 
 function convertMs(ms) {
     // Number of milliseconds per unit of time
